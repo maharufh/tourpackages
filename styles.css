@@ -1,0 +1,467 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header and Navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #007bff;
+}
+
+.contact span {
+    font-size: 14px;
+    color: #555;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 5px 0;
+}
+
+.dropdown li a {
+    color: #555;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Search Panel Styling */
+.search-panel {
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.search-panel h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.search-panel form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-panel label {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 5px;
+}
+
+.search-panel input[type="text"],
+.search-panel input[type="date"],
+.search-panel input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.search-panel button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-panel button i {
+    margin-right: 5px;
+}
+
+/* Featured Section Styling */
+.featured {
+    width: 75%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.featured .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+.featured .overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured .overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.featured .overlay button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Packages Section */
+.packages {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.packages h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Package Card Styling */
+.package-card {
+    width: 23%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.package-card .price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.package-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.package-card h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.package-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.package-card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.package-card .details span {
+    display: flex;
+    align-items: center;
+}
+
+.package-card .details i {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .search-panel,
+    .featured {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .package-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .package-card {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* Guarantee Section */
+/* New Programs Section */
+.new-programs {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.new-programs h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.new-program-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+
+.program-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.program-info {
+    padding: 10px;
+}
+
+.program-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.program-info span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.airline-logo {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Guarantee Section */
+.guarantee-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    gap: 15px;
+}
+
+.guarantee-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guarantee-item .icon {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.guarantee-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.guarantee-item span {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-logo h3 span {
+    color: #007bff;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
